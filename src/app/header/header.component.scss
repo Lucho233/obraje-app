@@ -1,0 +1,33 @@
+table {
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 60px;
+    border: 15px;
+}
+tr {
+    height: 50px;
+}
+th {
+    background:#7FE80F;
+    height: 100%;
+} 
+
+a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+th:hover{
+    background:white;
+    color: black;
+}
+h1 {
+    font-size: 90px;
+    text-align: center;
+}
