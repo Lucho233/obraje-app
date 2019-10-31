@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-sub-contenido',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubContenidoComponent implements OnInit {
 
+  titleControl: FormControl;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit() {
   }
 
 }

@@ -1,2 +1,7 @@
-<input type="text" placeholder="Titulo">
-<input type="text" placeholder="Escriba Aqui...">
+<form (submit)="onSubmit()" class="subir-contenido">
+    <input type="text" class="title" placeholder="Titulo..." [formControl]="titleControl">
+    <br>
+    <input type="textarea" class="text" placeholder="Escriba Aqui...">
+    <br>
+    <button class="botoncito">Subir Archivo</button>
+</form>
