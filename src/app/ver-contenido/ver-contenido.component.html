@@ -1,0 +1,16 @@
+<mat-card class="contenido-card mat-elevation-z9">
+    <mat-card-title>ELIGE UN GRADO</mat-card-title>
+    <mat-form-field appearance="outline">
+            <mat-label>Grados</mat-label>
+        <mat-select name="grado">
+            <mat-option *ngFor="let grado of grados" [value]="grado.value">{{grado.nombre}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <app-item-contenido 
+        [titulo]="'Tarea del dia'"
+        [texto]= "'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut esse repellat. Ullam obcaecati cum voluptatum ab, accusamus totam nostrum saepe, quasi eligendi fugiat tempore modi amet sunt ratione ea!'"
+        [contenido]="'contenido'"></app-item-contenido>
+    <app-item-contenido></app-item-contenido>
+    <app-item-contenido></app-item-contenido>
+</mat-card>
+
