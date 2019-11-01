@@ -1,18 +1,9 @@
-#contenedor-login {
-    height: 100%;
-    width: 100%;
-}
-
-#card-login {
-    height: 500px;
-    width: 400px;
-    background-color: #CFECD2 ;
+.contenido-card{
+    margin: 40px;
+    width: 450px ;
     margin: auto;
-    margin-top: 50px;
-}
-#titulo {
-    text-align: center;
-}
-#boton {
-    text-align: center;
+    margin-top:40px ;
+    padding: 48px 40px 36px;
+    background-color: rgb(243, 243, 243);
+    text-align: -webkit-center;
 }

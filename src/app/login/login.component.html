@@ -1,22 +1,29 @@
-<div id="contenedor-login">
-    <div id="card-login">
-     <div id="titulo">
-         <h1>El Obraje</h1>
-         <h2>Iniciar sesion</h2>
-     </div>
-     <form id="datos">
-         <label>Usuario: </label><input type="text" [formControl]="userName">
-         <br>
-         <br>
-         <label>Contraseña: </label><input type="password" [formControl]="password">
-         <br>
-         <br>
-              
-     </form>
-     <div id="boton">
-       <form>
-         <button type="submit">Iniciar sesion</button>   
-       </form>
-     </div>
-    </div>
-</div>
+<mat-card class="contenido-card mat-elevation-z9">
+  <mat-card-title>
+    El obraje
+  </mat-card-title>
+  <mat-card-subtitle>
+    Complete los datos para inciar sesión
+  </mat-card-subtitle>
+  <div class="user-data">
+    <mat-form-field appearance="outline">
+      <mat-label>Usuario </mat-label>
+      <input matInput [formControl]="userName" required>
+      <mat-error *ngIf="userName.hasError">Usuario inválido</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Contraseña</mat-label>
+      <input matInput type="password" [formControl]="password" required>
+      <mat-error *ngIf="password.hasError">Contraseña inválido</mat-error>
+    </mat-form-field>
+  </div>
+  <mat-card-actions>
+      <button mat-raised-button
+        [disabled]="!userName.valid || !password.valid"
+      >
+        Iniciar sesion
+      </button>
+  </mat-card-actions>
+</mat-card>
+
