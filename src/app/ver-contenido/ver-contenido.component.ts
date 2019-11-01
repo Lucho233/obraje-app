@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerContenidoComponent implements OnInit {
   grados
-
+  gradoSeleccionado = false
+  listaItems = []
   constructor() { 
     this.grados = [
       {
@@ -62,6 +63,32 @@ export class VerContenidoComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onSelectionChange() {
+    this.gradoSeleccionado = true
+    this.listaItems = [
+      {
+       titulo: "Hola mundo",
+       texto: "lalala lalala",
+       contenido: "contenido" 
+      },
+      {
+       titulo: "Hola mundo 2",
+       texto: "lalala lalala 2",
+       contenido: "contenido" 
+      },
+      {
+       titulo: "Hola mundo 3",
+       texto: "lalala lalala 3",
+       contenido: "contenido" 
+      },
+      {
+       titulo: "Hola mundo 4",
+       texto: "lalala lalala 4",
+       contenido: "contenido" 
+      },
+    ]
   }
 
 }
